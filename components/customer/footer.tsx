@@ -41,7 +41,7 @@ export default function CustomerFooter() {
             </li>
             <li className="flex flex-col">
               <span className="text-xs text-slate-500 mb-1">Phone</span>
-              <a href="tel:+911234567890" className="hover:text-white transition-colors">+91 1234567890</a>
+              <a href="tel:+916309981444" className="hover:text-white transition-colors">+91 6309981444</a>
             </li>
             <li className="flex flex-col">
               <span className="text-xs text-slate-500 mb-1">Location</span>
