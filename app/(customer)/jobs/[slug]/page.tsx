@@ -16,6 +16,7 @@ import {
   ArrowLeft,
   Sparkles,
   Search,
+  Phone,
 } from 'lucide-react'
 import type { Metadata } from 'next'
 
@@ -357,6 +358,18 @@ export default async function DynamicJobOrCategoryPage({
                         </div>
                       </li>
                     )}
+
+                    <li className="flex items-start gap-3">
+                      <Phone className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+                      <div>
+                        <p className="text-slate-500 text-xs">Contact HR</p>
+                        <p className="font-medium text-slate-900">
+                          <a href="tel:6309981555" className="hover:text-blue-600 underline-offset-2 hover:underline">
+                            6309981555
+                          </a>
+                        </p>
+                      </div>
+                    </li>
                   </ul>
                 </div>
 

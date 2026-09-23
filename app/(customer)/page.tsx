@@ -97,25 +97,25 @@ export default async function HomePage() {
           </div>
 
           {/* Poster Tagline & Header */}
-          <p className="text-lg md:text-2xl font-light text-blue-200 mb-3 tracking-wide">
+          <p className="text-base md:text-2xl font-light text-blue-200 mb-3 tracking-wide animate-in fade-in slide-in-from-bottom-4 duration-700">
             Better Jobs, <span className="font-bold text-yellow-400">Brighter Future</span>
           </p>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4 leading-none uppercase">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4 leading-none uppercase animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150">
             <span className="block text-yellow-400 drop-shadow-md">WE ARE</span>
             <span className="block text-white drop-shadow-lg">HIRING</span>
           </h1>
 
-          <div className="inline-block bg-orange-600/90 text-white text-base md:text-xl font-bold px-6 py-2 rounded-lg shadow-md mb-8">
+          <div className="inline-block bg-orange-600/90 text-white text-sm md:text-xl font-bold px-6 py-2 rounded-lg shadow-md mb-8 animate-in fade-in zoom-in duration-500 delay-300">
             All Types of Workers Needed
           </div>
 
           {/* Quick CTA Actions */}
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-in fade-in slide-in-from-bottom-8 duration-700 delay-500">
             <Link href="/jobs" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-black text-lg h-14 px-8 rounded-xl shadow-xl transition-transform hover:scale-105"
+                className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-blue-950 font-black text-lg h-14 px-8 rounded-xl shadow-xl transition-transform hover:scale-105 active:scale-95"
               >
                 <Search className="mr-2 w-5 h-5 text-blue-950" />
                 Find Jobs
@@ -125,7 +125,7 @@ export default async function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold text-lg h-14 px-8 rounded-xl shadow-lg transition-all"
+                className="w-full sm:w-auto border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-blue-900 font-bold text-lg h-14 px-8 rounded-xl shadow-lg transition-all active:scale-95"
               >
                 Cleaning Staff
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -185,16 +185,16 @@ export default async function HomePage() {
                   href={`/jobs/${cat.slug}`}
                   className="group block focus:outline-none"
                 >
-                  <div className="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1.5 group-hover:border-blue-400 text-center h-full flex flex-col items-center justify-center gap-3">
+                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200/50 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1.5 group-hover:border-blue-400 group-hover:bg-white text-center h-full flex flex-col items-center justify-center gap-2 sm:gap-3">
                     <div
-                      className={`p-4 rounded-2xl transition-colors duration-300 shadow-sm ${colorClass}`}
+                      className={`p-3 sm:p-4 rounded-xl sm:rounded-2xl transition-colors duration-300 shadow-sm ${colorClass}`}
                     >
-                      <IconComp className="w-7 h-7 md:w-8 md:h-8" />
+                      <IconComp className="w-6 h-6 sm:w-8 sm:h-8" />
                     </div>
-                    <h3 className="font-bold text-slate-800 text-sm md:text-base group-hover:text-blue-700 transition-colors line-clamp-1">
+                    <h3 className="font-bold text-slate-800 text-xs sm:text-base group-hover:text-blue-700 transition-colors line-clamp-2 sm:line-clamp-1 leading-tight">
                       {cat.name}
                     </h3>
-                    <span className="text-xs text-slate-400 group-hover:text-blue-500 font-medium inline-flex items-center gap-1 transition-colors">
+                    <span className="text-[10px] sm:text-xs text-slate-400 group-hover:text-blue-500 font-medium inline-flex items-center gap-1 transition-colors">
                       View Jobs <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>

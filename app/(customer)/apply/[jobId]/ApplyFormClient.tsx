@@ -239,8 +239,8 @@ export default function ApplyFormClient({
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="space-y-1.5 p-4 rounded-xl border border-slate-200 bg-slate-50/50">
-            <Label htmlFor="doc_resume" className="text-slate-800 font-semibold text-sm">
+          <div className="space-y-1.5 p-5 rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 hover:bg-slate-100 hover:border-blue-400 transition-colors group cursor-pointer relative">
+            <Label htmlFor="doc_resume" className="text-slate-800 font-semibold text-sm group-hover:text-blue-700 cursor-pointer block">
               Resume / Bio-data
             </Label>
             <Input
@@ -248,12 +248,12 @@ export default function ApplyFormClient({
               name="doc_resume"
               type="file"
               accept=".pdf,.doc,.docx,.jpg,.png"
-              className="bg-white cursor-pointer mt-1"
+              className="bg-white/60 cursor-pointer mt-2 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
           </div>
 
-          <div className="space-y-1.5 p-4 rounded-xl border border-slate-200 bg-slate-50/50">
-            <Label htmlFor="doc_photo" className="text-slate-800 font-semibold text-sm">
+          <div className="space-y-1.5 p-5 rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 hover:bg-slate-100 hover:border-blue-400 transition-colors group cursor-pointer relative">
+            <Label htmlFor="doc_photo" className="text-slate-800 font-semibold text-sm group-hover:text-blue-700 cursor-pointer block">
               Passport Size Photo
             </Label>
             <Input
@@ -261,12 +261,12 @@ export default function ApplyFormClient({
               name="doc_photo"
               type="file"
               accept=".jpg,.jpeg,.png"
-              className="bg-white cursor-pointer mt-1"
+              className="bg-white/60 cursor-pointer mt-2 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
           </div>
 
-          <div className="space-y-1.5 p-4 rounded-xl border border-slate-200 bg-slate-50/50">
-            <Label htmlFor="doc_id" className="text-slate-800 font-semibold text-sm">
+          <div className="space-y-1.5 p-5 rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 hover:bg-slate-100 hover:border-blue-400 transition-colors group cursor-pointer relative">
+            <Label htmlFor="doc_id" className="text-slate-800 font-semibold text-sm group-hover:text-blue-700 cursor-pointer block">
               ID Proof (Aadhaar / Voter ID / Driving License)
             </Label>
             <Input
@@ -274,20 +274,20 @@ export default function ApplyFormClient({
               name="doc_id"
               type="file"
               accept=".pdf,.jpg,.jpeg,.png"
-              className="bg-white cursor-pointer mt-1"
+              className="bg-white/60 cursor-pointer mt-2 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
           </div>
 
-          <div className="space-y-1.5 p-4 rounded-xl border border-slate-200 bg-slate-50/50">
-            <Label htmlFor="doc_other" className="text-slate-800 font-semibold text-sm">
-              Other Document (Certificate / Experience Letter)
+          <div className="space-y-1.5 p-5 rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 hover:bg-slate-100 hover:border-blue-400 transition-colors group cursor-pointer relative">
+            <Label htmlFor="doc_other" className="text-slate-800 font-semibold text-sm group-hover:text-blue-700 cursor-pointer block">
+              Other Document (Certificate / Experience)
             </Label>
             <Input
               id="doc_other"
               name="doc_other"
               type="file"
               accept=".pdf,.jpg,.jpeg,.png"
-              className="bg-white cursor-pointer mt-1"
+              className="bg-white/60 cursor-pointer mt-2 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
           </div>
         </div>
